@@ -1,0 +1,51 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+  /* Centering the title and the container horizontally */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 50px; /* Gives some breathing room at the top */
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 32px; /* Requirement: 32px between title and items */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 52px; /* Requirement: 52px between each item */
+}
+
+.item {
+  width: 200px; /* Requirement: items are 200px wide */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* Requirement: text is centered */
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  border: 4px solid rebeccapurple;
+  border-radius: 15px;
+  margin-bottom: 8px; 
+}
+
+/* do not edit this footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eee;
+}
