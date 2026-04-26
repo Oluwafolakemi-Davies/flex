@@ -1,0 +1,80 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; 
+}
+
+
+.header {
+    height: 72px;
+    background: darkmagenta;
+    color: white;
+    font-size: 32px;
+    font-weight: 900;
+    display: flex;
+    align-items: center; /* Vertically centers the text */
+    padding: 0 16px;     /* 16px from the edge of the screen */
+}
+
+.main-content {
+    display: flex;
+    flex: 1; /* This is the "magic" line that pushes the footer to the bottom */
+}
+
+/* 4. Sidebar Styles */
+.sidebar {
+    width: 300px;
+    flex-shrink: 0; /* Ensures the sidebar never gets squished */
+    background: royalblue;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin-bottom: 12px;
+}
+
+.sidebar a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none; /* Removes the underline */
+}
+
+/* 5. Cards Section Styles */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap to new lines */
+    gap: 32px;       /* Space between cards */
+    padding: 48px;   /* Required padding around the section */
+    background: #f9f9f9;
+    align-content: flex-start; /* Prevents cards from stretching vertically */
+    flex: 1;
+}
+
+.card {
+    /* flex-basis: 300px acts as the 'ideal' width for wrapping logic */
+    flex: 1 1 300px; 
+    padding: 24px;
+    background: white;
+    border: 1px solid #eee;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+    border-radius: 4px;
+    line-height: 1.5;
+}
+
+.footer {
+    height: 72px;
+    background: #eee;
+    color: darkmagenta;
+    display: flex;
+    justify-content: center; /* Centered horizontally */
+    align-items: center;     /* Centered vertically */
+}
